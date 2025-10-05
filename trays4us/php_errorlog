@@ -1,0 +1,142 @@
+[26-Mar-2024 11:33:47 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(296): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#4 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/fram in /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[01-Aug-2024 10:36:43 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 7.4.33. in /home/customer/www/staging.trays4.us/public_html/vendor/composer/platform_check.php on line 28
+[01-Aug-2024 10:37:48 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/customer/www/staging.trays4.us/public_html/vendor/dompdf/dompdf/src/Css/Style.php on line 2832
+[13-Aug-2024 12:03:04 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/customer/www/staging.trays4.us/public_html/vendor/dompdf/dompdf/src/Css/Style.php on line 2832
+[29-Aug-2024 02:00:35 CST6CDT] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#4 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/customer/www/staging.trays4.us/public_html/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/customer/www/staging.trays4.us/public_html/index.php(20): require_once('/home/customer/...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/customer/www/staging.trays4.us/public_html/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/customer/www/staging.trays4.us/public_html/index.php(20): require_once('/home/customer/...')
+#10 {main}
+  thrown in /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[29-Aug-2024 02:00:44 CST6CDT] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#4 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/customer/www/staging.trays4.us/public_html/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/customer/www/staging.trays4.us/public_html/index.php(20): require_once('/home/customer/...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/customer/www/staging.trays4.us/public_html/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/customer/www/staging.trays4.us/public_html/index.php(20): require_once('/home/customer/...')
+#10 {main}
+  thrown in /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[29-Aug-2024 02:00:49 CST6CDT] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#4 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/customer/www/staging.trays4.us/public_html/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/customer/www/staging.trays4.us/public_html/index.php(20): require_once('/home/customer/...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/customer/www/staging.trays4.us/public_html/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/customer/www/staging.trays4.us/public_html/index.php(20): require_once('/home/customer/...')
+#10 {main}
+  thrown in /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[29-Aug-2024 02:00:54 CST6CDT] PHP Fatal error:  Uncaught ReflectionException: Class "App\Http\Kernel" does not exist in /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:877
+Stack trace:
+#0 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(877): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#4 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#5 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#6 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#7 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#8 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#9 /home/customer/www/staging.trays4.us/public_html/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#10 /home/customer/www/staging.trays4.us/public_html/index.php(20): require_once('/home/customer/...')
+#11 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Kernel] does not exist. in /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:879
+Stack trace:
+#0 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(295): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(873): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(758): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(851): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(694): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(836): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/customer/www/staging.trays4.us/public_html/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/customer/www/staging.trays4.us/public_html/index.php(20): require_once('/home/customer/...')
+#10 {main}
+  thrown in /home/customer/www/staging.trays4.us/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 879
+[29-Aug-2024 07:04:35 UTC] PHP Deprecated:  Optional parameter $email declared before required parameter $info is implicitly treated as a required parameter in /home/customer/www/staging.trays4.us/public_html/app/Models/Customer.php on line 73
+[29-Aug-2024 07:04:35 UTC] PHP Deprecated:  Optional parameter $customer declared before required parameter $setting is implicitly treated as a required parameter in /home/customer/www/staging.trays4.us/public_html/app/Models/Customer.php on line 106
+[30-Aug-2024 09:13:31 UTC] PHP Deprecated:  Optional parameter $email declared before required parameter $info is implicitly treated as a required parameter in /home/customer/www/staging.trays4.us/public_html/app/Models/Customer.php on line 73
+[30-Aug-2024 09:13:31 UTC] PHP Deprecated:  Optional parameter $customer declared before required parameter $setting is implicitly treated as a required parameter in /home/customer/www/staging.trays4.us/public_html/app/Models/Customer.php on line 106
+[31-Aug-2024 14:15:22 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/customer/www/staging.trays4.us/public_html/vendor/dompdf/dompdf/src/Css/Style.php on line 2832
+[12-Sep-2024 10:09:26 UTC] PHP Deprecated:  Optional parameter $email declared before required parameter $info is implicitly treated as a required parameter in /home/customer/www/staging.trays4.us/public_html/app/Models/Customer.php on line 73
+[12-Sep-2024 10:09:26 UTC] PHP Deprecated:  Optional parameter $customer declared before required parameter $setting is implicitly treated as a required parameter in /home/customer/www/staging.trays4.us/public_html/app/Models/Customer.php on line 106
+[27-Sep-2024 09:14:40 UTC] PHP Deprecated:  Optional parameter $email declared before required parameter $info is implicitly treated as a required parameter in /home/customer/www/staging.trays4.us/public_html/app/Models/Customer.php on line 73
+[27-Sep-2024 09:14:40 UTC] PHP Deprecated:  Optional parameter $customer declared before required parameter $setting is implicitly treated as a required parameter in /home/customer/www/staging.trays4.us/public_html/app/Models/Customer.php on line 106
+[27-Sep-2024 09:14:40 UTC] PHP Deprecated:  Using ${var} in strings is deprecated, use {$var} instead in /home/customer/www/staging.trays4.us/public_html/vendor/dompdf/dompdf/src/Css/Style.php on line 2832
+[03-Oct-2024 02:41:08 CST6CDT] PHP Parse error:  Unclosed '{' on line 2 in /home/customer/www/staging.trays4.us/public_html/index.php on line 22
+[03-Oct-2024 02:41:09 CST6CDT] PHP Parse error:  Unclosed '{' on line 2 in /home/customer/www/staging.trays4.us/public_html/index.php on line 22
+[03-Oct-2024 02:45:34 CST6CDT] PHP Parse error:  Unclosed '(' does not match '}' in /home/customer/www/staging.trays4.us/public_html/index.php on line 2
+[03-Oct-2024 02:46:17 CST6CDT] PHP Parse error:  syntax error, unexpected token ";" in /home/customer/www/staging.trays4.us/public_html/index.php on line 2
+[27-Nov-2024 10:34:31 UTC] PHP Deprecated:  Optional parameter $email declared before required parameter $info is implicitly treated as a required parameter in /home/customer/www/staging.trays4.us/public_html/app/Models/Customer.php on line 73
+[27-Nov-2024 10:34:31 UTC] PHP Deprecated:  Optional parameter $customer declared before required parameter $setting is implicitly treated as a required parameter in /home/customer/www/staging.trays4.us/public_html/app/Models/Customer.php on line 106

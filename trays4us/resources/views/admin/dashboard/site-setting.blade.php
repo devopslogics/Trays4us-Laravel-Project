@@ -1,0 +1,323 @@
+@extends('layouts.admin.dashboard')
+@push('styles')
+    <link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css"/>
+@endpush
+@section('content')
+    <div class="row">
+        <div class="col-md-12">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="page-title">Setting</h3>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav nav-tabs menu-tabs">
+                <li class="nav-item active">
+                    <a class="nav-link" href="javascript:void(0)">General Settings</a>
+                </li>
+            </ul>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 mt-3">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <form action="{{ route('site-update') }}" method="post" enctype="multipart/form-data" class="site_setting">
+                                {{ csrf_field() }}
+                                <div class="tab-content pt-0">
+                                    <div id="general" class="tab-pane active">
+                                        <div class="card mb-0">
+                                            <div class="card-header">
+                                                <h4 class="card-title">General Settings</h4>
+                                            </div>
+
+                                            <div class="card-body">
+                                                <div class="row">
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="enable_otp">Force all buyers to sign in every time with a one-time-password ?</label>
+                                                            <input class="form-check-input" type="checkbox" name="enable_otp" value="1" id="enable_otp" {{$site_managements->enable_otp == 1 ? 'checked': '' }}>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label" for="send_email">Enable Email Verification on Signup ? </label>
+                                                            <input class="form-check-input" type="checkbox" name="send_email" value="1" id="send_email" {{$site_managements->send_email == 1 ? 'checked': '' }}>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Frontend Catalogue Pagination</label>
+                                                        <input type="text" class="form-control" name="pagination" value="{{$site_managements->pagination}}">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Admin  Pagination</label>
+                                                        <input type="text" class="form-control" name="backend_pagination_listing" value="{{$site_managements->backend_pagination_listing}}">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Website Logo</label>
+                                                        <div class="uploader">
+                                                            <input type="file" class="form-control" name="website_logo">
+                                                        </div>
+
+                                                        @if( !empty($site_managements->website_logo) && \Storage::disk('uploads')->exists('/users/' . $site_managements->website_logo))
+                                                            <img src="{{ url('uploads/users/'.$site_managements->website_logo) }}" class="site-logo" alt>
+                                                        @endif
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6" style="display: none">
+                                                    <div class="form-group">
+                                                        <label>Favicon</label>
+                                                        <div class="uploader">
+                                                            <input type="file" class="form-control" name="fav_icon">
+                                                        </div>
+                                                        <p class="form-text text-muted small mb-0">Recommended image size is <b>16px x 16px</b> or <b>32px x 32px</b></p>
+                                                        @if( !empty($site_managements->fav_icon) && \Storage::disk('uploads')->exists('/users/' . $site_managements->fav_icon))
+                                                            <img src="{{ url('uploads/users/'.$site_managements->fav_icon) }}" class="fav-icon" alt>
+                                                        @endif
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Website Name</label>
+                                                        <input type="text" class="form-control" name="site_name" value="{{$site_managements->site_name}}">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label>Address</label>
+                                                        <input type="text" class="form-control" name="address" value="{{$site_managements->address}}">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>City</label>
+                                                        <input type="text" class="form-control" name="city" value="{{$site_managements->city}}">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>State</label>
+                                                        <input type="text" class="form-control" name="state" value="{{$site_managements->state}}">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Postal Code</label>
+                                                        <input type="text" class="form-control" name="zip_code" value="{{$site_managements->zip_code}}">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Mobile Number</label>
+                                                        <input type="text" class="form-control" name="mobile_number" value="{{$site_managements->mobile_number}}">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Email</label>
+                                                        <input type="text" class="form-control" name="email" value="{{$site_managements->email}}">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Currency symbol</label>
+                                                        <input type="text" class="form-control" name="currency_symbol" value="{{$site_managements->currency}}">
+                                                     </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Order lead time (Days)</label>
+                                                        <input type="text" class="form-control" name="estimated_ship_days" value="{{$site_managements->estimated_ship_days}}">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Minimum order amount</label>
+                                                        <input type="text" class="form-control" name="minimum_order_amount" value="{{$site_managements->minimum_order_amount}}">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>MSRP</label>
+                                                        <input type="text" class="form-control" name="msrp_price" value="{{$site_managements->msrp_price}}">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label>Shipping Fee</label>
+                                                        <input type="text" class="form-control" name="shipping_fee" value="{{$site_managements->shipping_fee}}">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label for="display_order">Display order</label>
+                                                        <input type="hidden" id="sorting_order" name="sorting_order"
+                                                               value="{{ is_array($site_managements->display_order_value) ? implode(',', $site_managements->display_order_value) : '' }}">
+                                                        <select id="display_order_value" name="display_order_value[]" multiple class="form-control">
+                                                            <option value="">Select display order</option>
+                                                            @foreach($sorting_orders as $key => $collection)
+                                                                <optgroup label="{{$key}}">
+                                                                    @foreach($collection as $item)
+                                                                        <option value="{{$item->id}}" {{ (is_array($site_managements->display_order_value) && in_array($item->id, $site_managements->display_order_value) ? 'selected' : '') }}>{{$item->badge}}</option>
+                                                                    @endforeach
+                                                                </optgroup>
+                                                            @endforeach
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <fieldset class="ftu-filedset-input" >
+                                                    <legend>Upload Your Artwork ( Customizer )</legend>
+                                                    <div class="row">
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="form-check-label" for="customizer_bedge">Bedge ID</label>
+                                                                <select class="form-control" name="customizer_bedge" id="customizer_bedge">
+                                                                    <option value="">Select Badge</option>
+                                                                    @foreach($badges as $badge)
+                                                                        <option value="{{$badge->id}}" {{ $site_managements->customizer_bedge == $badge->id ? 'selected' : ''}}>{{$badge->badge}}</option>
+                                                                    @endforeach
+                                                                </select>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="form-check-label" for="customizer_artist_id">Artist ID</label>
+                                                                <select class="form-control" name="customizer_artist_id" id="customizer_artist_id">
+                                                                    <option  value="">Select  Artist</option>
+                                                                    @foreach($artists as $artist)
+                                                                        @php
+                                                                            $artist_name = $artist->first_name.' '.$artist->last_name;
+                                                                            if($artist->display_name)
+                                                                               $artist_name = $artist->display_name;
+                                                                        @endphp
+                                                                        <option value="{{$artist->id}}" {{ $site_managements->customizer_artist_id == $artist->id ? 'selected' : ''}}>{{$artist_name}}</option>
+                                                                    @endforeach
+                                                                </select>
+
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="form-check-label" for="customizer_style_id">Style ID</label>
+                                                                <select class="form-control" name="customizer_style_id" id="customizer_style_id">
+                                                                    <option value="">Select Style</option>
+                                                                    @foreach($themes as $theme)
+                                                                        <option value="{{$theme->id}}" {{ $site_managements->customizer_style_id == $theme->id ? 'selected' : ''}}>{{$theme->style_name}}</option>
+                                                                    @endforeach
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                         <?php /*
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="form-check-label" for="customizer_price">Customizer Price</label>
+                                                                <input type="text" class="form-control" id="customizer_price" name="customizer_price" value="{{$site_managements->customizer_price}}">
+                                                            </div>
+                                                        </div> */ ?>
+
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label class="form-check-label" for="customizer_minimums">Minimums(Design Types ID)</label>
+                                                                <select class="form-control" name="customizer_minimums" id="customizer_minimums">
+                                                                    <option  value="">Select Minimum</option>
+                                                                    @foreach($customizables as $customizable)
+                                                                        <option value="{{$customizable->id}}" {{ $site_managements->customizer_minimums == $customizable->id ? 'selected' : ''}}>{{$customizable->customizable_name}}</option>
+                                                                    @endforeach
+                                                                </select>
+
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </fieldset>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pt-0">
+                                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+@endsection
+
+@push('scripts')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#display_order_value").chosen( { width: '100%' });
+            /*
+            $('#display_order_valuess').chosen().change(function(){
+                var myValues = $('#sorting_order').chosen().val();
+                alert(myValues);
+            });
+            */
+
+            $("#display_order_value").chosen({
+                width: '100%'
+            }).change(function(evt, params){
+
+
+                var sorting_order = $('#sorting_order').val();
+                var values = sorting_order ? sorting_order.split(',') : [];
+
+                if (params.deselected) {
+                    values = values.filter(function(item) {
+                        return item !== params.deselected;
+                    });
+                }
+
+                if (params.selected) {
+                    values.push(params.selected);
+                }
+
+                $('#sorting_order').val(values.join(','));
+
+            });
+
+        });
+    </script>
+@endpush

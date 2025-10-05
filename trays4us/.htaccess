@@ -1,0 +1,77 @@
+SetEnv PHPRC /home/customer/www/staging.trays4.us/public_html/php.ini
+# Really Simple SSL
+#<ifModule mod_headers="">
+Header always set Strict-Transport-Security: "max-age=31536000" env=HTTPS
+Header always set Content-Security-Policy "upgrade-insecure-requests"
+Header always set X-XSS-Protection "0"
+Header always set X-Content-Type-Options "nosniff"
+Header always set Referrer-Policy "strict-origin-when-cross-origin" 
+Header always set X-Frame-Options: "SAMEORIGIN"
+Header always set Permissions-Policy: "" 
+Header add Content-Security-Policy: "frame-ancestors 'self'"
+#</ifModule>
+# End Really Simple SSL
+
+<Files ~ "\.(env|json|config.js|md|gitignore|gitattributes|lock)$">
+    Order allow,deny
+    Deny from all
+</Files>
+
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+	
+	RewriteCond %{HTTP_HOST} ^www\.staging\.trays4\.us [NC]
+    RewriteRule ^(.*)$ http://staging.trays4.us/$1 [L,R=301]
+	
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder... aa
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+	
+	RewriteRule ^app/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+	RewriteRule ^resources/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+	RewriteRule ^routes/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+	RewriteRule ^vendor/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+	RewriteRule ^uploads/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+	RewriteRule ^storage/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+	RewriteRule ^public/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+	RewriteRule ^config/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+	RewriteRule ^bootstrap/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+	RewriteRule ^assets/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+	RewriteRule ^.metadata/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+	RewriteRule ^.idea/.*\.(?:php[1-7]?|pht|phtml?|phps)\.?$ - [NC,F]
+</IfModule>
+
+
+# Maximum allowed size for uploaded files.
+php_value upload_max_filesize 1000M
+
+# Maximum size of POST data that PHP will accept.
+php_value post_max_size 1000M
+
+# Maximum number of files that can be uploaded simultaneously.
+php_value max_file_uploads 500
+
+# Maximum execution time of each script, in seconds.
+php_value max_execution_time 6666666666
+
+# Maximum amount of time each script may spend parsing request data.
+php_value max_input_time -1
+
+# Maximum allowed memory size for scripts.
+php_value memory_limit 1024000M
+AddHandler application/x-httpd-php82 .php .php5 .php4 .php3

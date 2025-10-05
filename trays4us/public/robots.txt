@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://trays4.us/sitemap.xml

@@ -1,0 +1,1821 @@
+
+
+  @font-face {
+
+    font-family: 'Bitter';
+
+    font-style: normal;
+
+    src: url('../fonts/bitter/bitter-regular.ttf') format('truetype');
+
+    font-weight: 400;
+
+    font-display: swap;
+
+  }
+
+  @font-face {
+
+    font-family: 'Noto Sans';
+
+    font-style: normal;
+
+    src: url('../fonts/notosans/NotoSans-Regular.ttf') format('truetype');
+
+    font-weight: 400;
+
+    font-display: swap;
+
+  }
+
+  @font-face {
+
+    font-family: 'Nunito';
+
+    font-style: normal;
+
+    src: url('../fonts/notosans/Nunito-Regular.ttf') format('truetype');
+
+    font-weight: 400;
+
+    font-display: swap;
+
+  }
+
+
+
+  body {
+
+    font-family: 'Noto Sans', sans-serif;
+
+  }
+
+  .alert-success {
+
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+}
+
+/* *** Header Css Start *** */
+
+#tfu-header-wrapper {
+
+    padding: 0px 20px;
+
+}
+
+
+
+  a.navbar-brand img {
+
+    width: 100%;
+
+    max-width: 80%;
+
+    margin-top: 5px;
+
+
+
+}
+
+#tfu-header-wrapper .row {
+
+    align-items: center;
+
+    height: 80px;
+
+}
+
+
+
+form.tfu-search-form {
+
+    position: relative;
+
+}
+
+span.tfu-icon-input-search {
+
+    position: absolute;
+
+    right: 10px;
+
+    top: 6px;
+
+
+
+}
+
+span.tfu-icon-input-search img {
+
+    width: 24px;
+
+}
+
+
+
+form.tfu-search-form input {
+
+    border: 1px solid #DBDBDB;
+
+    border-radius: 5px;
+
+}
+
+form.tfu-search-form input {
+
+    border: 1px solid #DBDBDB;
+
+    border-radius: 5px;
+
+}
+
+form.tfu-search-form input::placeholder {
+
+    color: #DBDBDB;
+
+    font-family: Noto Sans;
+
+    font-size: 16px;
+
+    font-style: normal;
+
+    font-weight: 400;
+
+    line-height: normal;
+
+}
+
+ul.navbar-nav {
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+ul.navbar-nav li a {
+
+    color: #000;
+
+    text-align: center;
+
+    font-family: Noto Sans;
+
+    font-size: 12px;
+
+    font-style: normal;
+
+    font-weight: 400;
+
+    line-height: normal;
+
+}
+
+
+
+
+
+.tfu-icon-wrapper {
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+.tfu-login-handler img {
+
+    width: 18px;
+
+}
+
+.tfu-cart-handler img {
+
+    width: 28px;
+
+}
+
+.tfu-cart-handler {
+
+    position: relative;
+
+}
+
+.tfu-cart-handler span {
+
+    border-radius: 50%;
+
+    color: #FFF;
+
+    text-align: center;
+
+    position: absolute;
+
+    top: -6px;
+
+    right: -10px;
+
+    font-family: Noto Sans;
+
+    font-size: 8px;
+
+    font-style: normal;
+
+    padding: 4px;
+
+    font-weight: 400;
+
+    line-height: normal;
+
+    background: black;
+
+}
+
+
+
+
+
+/* *** Header Css End *** */
+
+
+
+
+
+/* Home page css */
+
+
+
+
+
+  h2{
+
+    color: #000;
+
+font-family: Bitter;
+
+font-size: 32px;
+
+font-style: normal;
+
+font-weight: 700;
+
+line-height: normal;
+
+  }
+
+  h3.card-title {
+
+    color: #000;
+
+    font-family: Nunito;
+
+    font-size: 31px;
+
+    font-style: normal;
+
+    font-weight: 300;
+
+    line-height: normal;
+
+  }
+
+  .tfu-slide-content h1 {
+
+    color: #000;
+
+    margin-top: 15px;
+
+    text-align: center;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-family: Bitter;
+
+    font-size: 32px;
+
+    font-style: normal;
+
+    font-weight: 700;
+
+    line-height: normal;
+
+  }
+
+  .tfu-slide-content h3 {
+
+    color: #000;
+
+    text-align: center;
+
+    font-family: Bitter;
+
+    font-size: 18px;
+
+    font-style: normal;
+
+    font-weight: 700;
+
+    line-height: normal;
+
+  }
+
+  button.tfu-shop-now {
+
+    color: #000;
+
+    font-family: Bitter;
+
+    font-size: 14.4px;
+
+    font-style: normal;
+
+    margin-top: 60px;
+
+    padding: 12px 20px;
+
+    border-radius: 5px;
+
+    border: 1px solid #F60;
+
+    background: #FFF;
+
+    font-weight: 700;
+
+    line-height: normal;
+
+    margin-bottom: 10px;
+
+}
+
+ul.tfu-breadcumb-slider-home li a {
+
+    color: #000 !important;
+
+    font-family: Noto Sans;
+
+    font-size: 14.4px;
+
+    font-style: normal;
+
+    font-weight: 400;
+
+    line-height: normal;
+
+
+
+}
+
+  .slick-slide img {
+
+    width: 100%;
+
+}
+
+section.tfu-hero-slider-wrapper {
+
+    position: relative;
+
+}
+
+
+
+
+
+   .slick-dots {
+
+    list-style: none;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+  }
+
+   .slick-dots li {
+
+    display: inline-block;
+
+  }
+
+   .slick-dots li button {
+
+    transition: 0.2s background-color ease-in-out 0s;
+
+    border: none;
+
+    padding: 0;
+
+    color: transparent;
+
+    width: 20px;
+
+    height: 20px;
+
+    border: 1px solid #5B5B5B;
+
+    background-color: transparent;
+
+    margin-right: 10px;
+
+    border-radius: 50%;
+
+  }
+
+   .slick-dots li.slick-active button {
+
+    background-color: #858585;
+
+  }
+
+
+
+  button.custom-prev-arrow {
+
+    background: none;
+
+    border: 0px;
+
+    position: absolute;
+
+    top: 42%;
+
+    left: 20px;
+
+}
+
+button.custom-next-arrow {
+
+    background: none;
+
+    border: 0px;
+
+    position: absolute;
+
+    top: 42%;
+
+    right: 20px;
+
+}
+
+ul.slick-dots {
+
+    position: absolute;
+
+    top: 90%;
+
+}
+
+.tfu-slide-content {
+
+    position: absolute;
+
+    z-index: 999999;
+
+    top: 26%;
+
+    left: 2.5%;
+
+    text-align: center;
+
+}
+
+
+
+ul.tfu-breadcumb-slider-home {
+
+    padding: 10px 0px;
+
+    list-style: none;
+
+
+
+  }
+
+
+
+  ul.tfu-breadcumb-slider-home li {
+
+    display: inline;
+
+    font-size: 18px;
+
+  }
+
+
+
+  ul.tfu-breadcumb-slider-home li+li:before {
+
+    padding: 8px;
+
+    color: black;
+
+    content: "\007c";
+
+  }
+
+
+
+  ul.tfu-breadcumb-slider-home li a {
+
+    color: #0275d8;
+
+    text-decoration: none;
+
+  }
+
+
+
+  ul.tfu-breadcumb-slider-home li a:hover {
+
+    color: #01447e;
+
+    text-decoration: underline;
+
+  }
+
+
+
+
+
+
+
+
+
+  .tfu-create-custom-content {
+
+    text-align: center;
+
+    padding: 40px 70px;
+
+}
+
+.tfu-create-custom-content p {
+
+    color: #000;
+
+    text-align: center;
+
+    font-family: Noto Sans;
+
+    font-size: 24px;
+
+    font-style: normal;
+
+    font-weight: 400;
+
+    line-height: normal;
+
+    margin-top: 35px;
+
+}
+
+.tfu-inner-custom-product {
+
+    text-align: center;
+
+}
+
+.tfu-inner-custom-product p {
+
+    padding: 2px 8px;
+
+    color: #000;
+
+    text-align: center;
+
+    font-family: Noto Sans;
+
+    font-size: 24px;
+
+    font-style: normal;
+
+    font-weight: 400;
+
+    line-height: normal;
+
+    margin: 15px 0px 0px 0px;
+
+}
+
+.tfu-inner-custom-product span {
+
+    padding: 12px;
+
+    color: #5D5B5B;
+
+    text-align: center;
+
+    font-family: Noto Sans;
+
+    font-size: 24px;
+
+    font-style: normal;
+
+    font-weight: 400;
+
+    line-height: normal;
+
+    margin-top: 15px;
+
+}
+
+
+
+section.featured-artists-wrapper {
+
+  position: relative;
+
+}
+
+
+
+.featured-artists-content h2 {
+
+  color: #000;
+
+  text-align: center;
+
+  font-family: Bitter;
+
+  font-size: 32px;
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  line-height: normal;
+
+}
+
+button.custom-prev-arrow-artists {
+
+  background: none;
+
+  border: 0px;
+
+  position: absolute;
+
+  left: 20px;
+
+  top: 57%;
+
+}
+
+button.custom-next-arrow-artists {
+
+  background: none;
+
+  border: 0px;
+
+  position: absolute;
+
+  top: 56%;
+
+  right: 20px;
+
+}
+
+
+
+
+
+.slick-carousel-artists .slick-dots {
+
+  position: absolute  !important;
+
+  top: 100%  !important;
+
+  left: 40% !important;
+
+  margin-top: 50px;
+
+}
+
+.featured-artists-content {
+
+
+
+  margin-bottom: 40px;
+
+  margin-top: 20px;
+
+}
+
+.slider-artists-handler p {
+
+  color: #000;
+
+  font-family: Noto Sans;
+
+  font-size: 20px;
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  line-height: normal;
+
+}
+
+.slider-artists-handler h4 {
+
+  color: #000;
+
+  font-family: Nunito Sans;
+
+  font-size: 20px;
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  line-height: normal;
+
+}
+
+
+
+
+
+
+
+
+
+section.shop-wholesale-wrapper {
+
+  margin-top: 100px;
+
+  position: relative;
+
+  padding: 40px;
+
+}
+
+.shop-breadcrumb {
+
+  padding-left: 0px;
+
+  list-style: none;
+
+}
+
+.shop-breadcrumb li {
+
+  display: inline;
+
+  font-size: 18px;
+
+}
+
+.shop-breadcrumb li+li:before {
+
+  padding: 0px;
+
+  color: black;
+
+  content: "/\00a0";
+
+}
+
+.shop-breadcrumb li a {
+
+  color: black;
+
+  text-decoration: none;
+
+  color: #000;
+
+font-family: Noto Sans;
+
+font-size: 13px;
+
+font-style: normal;
+
+font-weight: 300;
+
+line-height: normal;
+
+}
+
+.shop-breadcrumb li a:hover {
+
+  color: #01447e;
+
+  text-decoration: underline;
+
+}
+
+
+
+button.btn-filter {
+
+  border-radius: 5px;
+
+  border: 1px solid #DBDBDB;
+
+  color: #000;
+
+font-family: Noto Sans;
+
+font-size: 20px;
+
+font-style: normal;
+
+font-weight: 400;
+
+line-height: normal;
+
+padding: 4px 15px;
+
+    background: white;
+
+    margin-bottom: 24px;
+
+    margin-top: 12px;
+
+}
+
+button.btn-filter span img {
+
+
+
+  padding-left: 10px;
+
+  width: 24px;
+
+  margin-top: -3px;
+
+}
+
+
+
+
+
+
+
+.card-header {
+
+  border: 1px solid #D9D9D9;
+
+  border-radius: 0px;
+
+  background-color: #fff;
+
+}
+
+.card-wrapper{
+
+  position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+
+    word-wrap: break-word;
+
+    background-color: #fff;
+
+    background-clip: border-box;
+
+}
+
+h4.card-subtitle {
+
+  color: #000;
+
+  font-family: Bitter;
+
+  font-size: 21px;
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  line-height: normal;
+
+}
+
+
+
+h6.card-subtitle-span {
+
+  color: #000;
+
+  font-family: Noto Sans;
+
+  font-size: 21px;
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  line-height: normal;
+
+}
+
+.buy-cart-price a {
+
+  color: #F60;
+
+  font-family: Bitter;
+
+  font-size: 14.4px;
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  line-height: normal;
+
+  padding: 8px 20px;
+
+  border-radius: 5px;
+
+  border: 1px solid #F60;
+
+}
+
+.product-price h5 {
+
+  color: #000;
+
+  text-align: right;
+
+  font-family: Noto Sans;
+
+  font-size: 28px;
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  line-height: normal;
+
+}
+
+.buy-cart-price {
+
+  text-align: end;
+
+}
+
+.product-price {
+
+  margin-top: 10px;
+
+}
+
+
+
+button.product-load-more {
+
+  color: #858585;
+
+  font-family: Bitter;
+
+  font-size: 14.4px;
+
+  padding: 12px 32px;
+
+  display: flex;
+
+  background-color: white;
+
+  font-weight: 700;
+
+  border-radius: 5px;
+
+  border: 1px solid #DBDBDB;
+
+  line-height: normal;
+
+  margin: 60px auto !important;
+
+}
+
+
+
+.main {
+
+  font-family:Arial;
+
+  width:500px;
+
+  display:block;
+
+  margin:0 auto;
+
+}
+
+
+
+
+
+button.left-custom-prev-arrow-artists {
+
+  background: none;
+
+  border: 0px;
+
+  position: absolute;
+
+  top: 70%;
+
+}
+
+
+
+button.left-custom-next-arrow-artists {
+
+  background: none;
+
+  border: 0px;
+
+  position: absolute;
+
+  top: 70%;
+
+  right: 50%;
+
+
+
+}
+
+
+
+button.right-custom-prev-arrow-artists {
+
+  background: none;
+
+  border: 0px;
+
+  position: absolute;
+
+  top: 70%;
+
+}
+
+
+
+button.right-custom-next-arrow-artists {
+
+  background: none;
+
+  border: 0px;
+
+  position: absolute;
+
+  top: 70%;
+
+  left: 97%;
+
+
+
+}
+
+
+
+
+
+.slider-list-img {
+
+  border: 1px solid #D9D9D9;
+
+  padding: 15px;
+
+  margin: 8px;
+
+}
+
+
+
+.slide-artists-content {
+
+  position: relative;
+
+}
+
+
+
+.slider-artists-handler {
+
+  padding: 30px;
+
+}
+
+
+
+.slider-nav-left {
+
+  padding: 30px;
+
+}
+
+.slider-nav-right {
+
+  padding: 30px;
+
+}
+
+.slider-for {
+
+  height: 265px;
+
+}
+
+
+
+.slider-artists-handler h2 {
+
+  margin-top: 30px;
+
+}
+
+
+
+/* shop in wholesale page css */
+
+
+
+.shop-in-wholesale-wrapper{
+
+
+
+  margin-top: 40px;
+
+  position: relative;
+
+  padding: 40px;
+
+}
+
+
+
+
+
+/* License Artwork page css */
+
+
+
+section.license-artwork-wrapper {
+
+  margin-top: 40px;
+
+}
+
+
+
+
+
+/* Sign In page css */
+
+
+
+section.tfu-sign-in-wrapper {
+
+  padding: 40px;
+
+}
+
+.row.tfu-sign-in-header {
+
+  margin-bottom: 70px;
+
+}
+
+.tfu-btn-filter {
+
+  border-radius: 5px;
+
+  border: 1px solid #DBDBDB;
+
+  color: #000;
+
+font-family: Noto Sans;
+
+font-size: 20px;
+
+font-style: normal;
+
+font-weight: 400;
+
+line-height: normal;
+
+padding: 4px 15px;
+
+    background: white;
+
+    margin-bottom: 24px;
+
+    margin-top: 12px;
+
+}
+
+.tfu-btn-filter span img {
+
+
+
+  padding-left: 10px;
+
+  width: 24px;
+
+  margin-top: -3px;
+
+}
+
+
+
+.ftu-signin-form-control {
+
+  margin: 0 auto;
+
+  width: 100%;
+  margin-top: 50px;
+  max-width: 42%;
+
+}
+
+
+
+button.ftu-signin-submit {
+
+  border-radius: 5px;
+
+  background: #F60;
+
+  color: #FFF;
+
+  font-family: Bitter;
+
+  font-size: 14.4px;
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  line-height: normal;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  margin: 0 auto;
+
+  border: 0;
+
+  padding: 12px 80px;
+
+}
+
+
+
+.ftu-signin-form-control label {
+
+  color: #000;
+
+  text-align: center;
+
+  font-family: Noto Sans;
+
+  font-size: 16px;
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  line-height: normal;
+
+}
+
+
+
+.ftu-signin-form-control input {
+
+  height: 48px;
+
+}
+
+
+
+.tfu-signin-useraccount {
+
+  text-align: center;
+
+  margin: 60px 0px;
+
+}
+
+
+
+.tfu-signin-useraccount p {
+
+  color: #000;
+
+  text-align: center;
+
+  font-family: Noto Sans;
+
+  font-size: 16px;
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  line-height: normal;
+
+}
+
+
+
+.tfu-signin-useraccount p span a {
+
+  color: #000;
+
+  text-align: center;
+
+  font-family: Noto Sans;
+
+  font-size: 16px;
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  line-height: normal;
+
+}
+
+
+
+.row.tfu-sign-in-header h2 {
+
+  margin-left: 36px;
+
+}
+
+
+
+/* Create Account page css */
+
+section.tfu-create-account-wrapper {
+
+  padding: 40px;
+
+}
+
+
+
+.ftu-account-form-control {
+
+  margin: 0 auto;
+
+  width: 100%;
+
+  max-width: 42%;
+
+}
+
+.ftu-account-form-control label {
+
+  color: #000;
+
+  text-align: center;
+
+  font-family: Noto Sans;
+
+  font-size: 16px;
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  line-height: normal;
+
+}
+
+
+
+.ftu-account-form-control input {
+
+  height: 48px;
+
+}
+
+
+
+button.ftu-account-submit {
+
+  border-radius: 5px;
+
+  background: #F60;
+
+  color: #FFF;
+
+  font-family: Bitter;
+
+  font-size: 14.4px;
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  line-height: normal;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  margin: 0 auto;
+
+  border: 0;
+
+  padding: 12px 80px;
+
+}
+
+.tfu-create-account-header {
+
+  margin-bottom: 70px;
+
+}
+
+
+
+.ftu-account-form-control input::placeholder {
+
+  color: #DBDBDB;
+
+  font-family: Noto Sans;
+
+  font-size: 16px;
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  line-height: normal;
+
+}
+
+.tfu-account-useraccount {
+
+  text-align: center;
+
+  margin: 60px 0px;
+
+}
+
+
+
+.tfu-account-useraccount p {
+
+  color: #000;
+
+  text-align: center;
+
+  font-family: Noto Sans;
+
+  font-size: 16px;
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  line-height: normal;
+
+}
+
+
+
+.tfu-account-useraccount p span a {
+
+  color: #000;
+
+  text-align: center;
+
+  font-family: Noto Sans;
+
+  font-size: 16px;
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  line-height: normal;
+
+}
+
+
+
+/* Dashboard page css */
+
+
+
+.tfu-dashboard-wrapper {
+
+  padding: 40px;
+
+}
+
+h3.tfu-dashboard-menu {
+
+  color: #000;
+
+  text-align: center;
+
+  font-family: Nunito;
+
+  font-size: 16px;
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  line-height: normal;
+
+}
+
+h3.tfu-dashboard-menu {
+
+  display: flex;
+
+  justify-content: space-around;
+
+}
+
+
+
+.ftu-dashboard-content {
+
+  width: 100%;
+
+  border-radius: 5px;
+
+  border: 1px solid #D9D9D9;
+
+}
+
+
+
+.ftu-dashboard-content h4 {
+
+  color: #000;
+
+  font-family: Nunito;
+
+  font-size: 24px;
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  line-height: normal;
+
+}
+
+.ftu-dashboard-content table tbody tr td {
+
+  padding-left: 16px;
+
+  color: #000;
+
+  font-family: Noto Sans;
+
+  font-size: 20px;
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  line-height: normal;
+
+}
+
+.ftu-dashboard-content {
+
+  padding: 70px 30px;
+
+}
+
+h2.ftu-dashboard-title {
+
+  font-size: 16px;
+
+  margin: 0;
+
+}
+
+
+
+.tfu-dashboard-header h2 {
+
+  font-size: 28px;
+
+  text-align: center;
+
+  padding-bottom: 10px;
+
+}
+
+ul.tfu-dashboard-menu-link {
+
+  display: flex;
+
+  justify-content: space-around;
+
+  list-style: none;
+
+}
+
+ul.tfu-dashboard-menu-link li a {
+
+  text-decoration: none;
+
+  color: #000;
+
+  text-align: center;
+
+  font-family: Nunito;
+
+  font-size: 16px;
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  line-height: normal;
+
+}
+
+ul.tfu-dashboard-menu-link li span {
+
+  padding-right: 50px
+
+}
+
+
+
+/* Media Query Responsive*/
+
+
+
+@media only screen and (max-width: 576px ) {
+
+
+
+  /* singin mobile Responsive*/
+
+  .ftu-signin-form-control {
+
+    margin: 0 auto;
+
+    width: 100%;
+
+    max-width: 100%;
+
+  }
+
+  section.tfu-sign-in-wrapper {
+
+    padding: 24px;
+
+}
+
+.row.tfu-sign-in-header h2 {
+
+  margin-left: 0px;
+
+  text-align: center;
+
+}
+
+.row.tfu-sign-in-header {
+
+  margin-bottom: 36px;
+
+}
+
+.tfu-signin-useraccount p {
+
+    font-size: 14px;
+
+}
+
+.tfu-signin-useraccount p span a {
+
+  font-size: 14px;
+
+}
+
+
+
+/* create account mobile Responsive*/
+
+.tfu-create-account-header h2 {
+
+  margin-left: 0px;
+
+  text-align: center;
+
+  font-size: 18px;
+
+}
+
+section.tfu-create-account-wrapper {
+
+  padding: 24px;
+
+}
+
+.tfu-create-account-header {
+
+  margin-bottom: 40px;
+
+}
+
+.ftu-account-form-control {
+
+
+
+  max-width: 100%;
+
+}
+
+.tfu-account-useraccount p {
+
+  font-size: 14px;
+
+}
+
+.tfu-account-useraccount p span a {
+
+font-size: 14px;
+
+}
+
+
+
+/* Dashboard page css */
+
+
+
+.tfu-dashboard-wrapper {
+
+  padding: 24px;
+
+}
+
+.ftu-dashboard-content {
+
+  padding: 40px 8px;
+
+}
+
+.ftu-dashboard-content h4 {
+
+  font-size: 18px;
+
+  font-weight: 900;
+
+}
+
+.ftu-dashboard-content table tbody tr td {
+
+  padding-left: 8px;
+
+  font-size: 12px;
+
+}
+
+ul.tfu-dashboard-menu-link {
+
+  display: initial;
+
+  padding-left: 30px;
+
+}
+
+ul.tfu-dashboard-menu-link li span {
+
+  padding-right: 30px;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
